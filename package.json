@@ -1,0 +1,30 @@
+{
+  "name": "redirector",
+  "version": "1.0.0",
+  "description": "Lightweight Express server for managing URL redirects via a simple TypeScript config.",
+  "homepage": "https://github.com/glaxindev/redirector#readme",
+  "bugs": {
+    "url": "https://github.com/glaxindev/redirector/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glaxindev/redirector.git"
+  },
+  "license": "MIT",
+  "author": "glaxindev",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "rimraf dist && tsc --project tsconfig.json",
+    "dev": "npm run build && npm start"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "rimraf": "^6.0.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
+  }
+}

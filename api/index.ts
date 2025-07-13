@@ -1,5 +1,5 @@
 import express from "express";
-import redirects from "./config";
+import redirects from "../config";
 
 const app = express();
 
@@ -27,3 +27,5 @@ app.listen(3000, () => {
   console.log("Server running on http://localhost:3000");
   console.log("Available redirects:", Object.keys(redirects));
 });
+
+export default app;
